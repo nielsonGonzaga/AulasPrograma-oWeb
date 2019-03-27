@@ -2,13 +2,30 @@ body {
     font-family: Helvetica, sans-serif;
 }
 
+header li {
+    display:inline-block;
+    margin-left: 3em; 
+}
+
+#contato li {
+    display: inline-block;
+    margin: 1em;
+}
+
+.container {
+    padding: 10%;
+    padding-right: 10%;
+}
+
 .identificacao {
     background-color: #579FF0;
     color: #FCFCFD;
+    padding: 7em 2em;
 }
 
 .identificacao h1 {
     font-size:2.5em;
+    margin-bottom: 0.7em; 
 }
 
 .identificacao h2 {
@@ -47,5 +64,10 @@ header li a {
 
 #sobre img{
     width: 200px;
+}
+
+footer img {
+   padding-top: 1em;
+   padding-bottom: 3em;  
 }
 
