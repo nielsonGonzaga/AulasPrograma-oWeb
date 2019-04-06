@@ -41,12 +41,39 @@ header li {
 
 #contato li {
     display: inline-block;
+}
+
+#contato li a{
+    display: inline-block;
     margin: 1em;
+    width: 48px;
+    height: 48px;
+    text-indent: -9999px;
+}
+
+#contato .email {
+    background-image: url("../imagens/email.png"); 
+}
+
+#contato .face {
+    background-image: url("../imagens/face.png") 
+}
+
+#contato .twitter {
+    background-image: url("../imagens/twitter.png") 
+}
+
+#contato .github {
+    background-image: url("../imagens/github.png") 
+}
+
+#contato .linkedin {
+    background-image: url("../imagens/linkedin.png") 
 }
 
 .container {
     padding-left: 10%;
-    padding-right: 10%;
+    padding: 10%;
 }
 
 section {
@@ -93,7 +120,11 @@ header li a {
 
 .projetos-header {
     float: left;
+    width: 30%;
+}
 
+.projetos-header {
+    margin-top: 1em;
 }
 
 .styleprojetos{
