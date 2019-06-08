@@ -28,8 +28,36 @@ if(isset($_GET['excluir'])){
    header("Location: usuario.php");
 }
 
-// EXCLUIR E LISTAr - CRUD 31/05
+if(isset($_GET['editar'])){
+   $id = $_GET['editarr'];
+   $resultado = $conexao ->("SELECT * FROm usuario WHERE ID=$id")
+   or die($conexao->error);
 
+
+
+   if(comt($resultado) == 1){
+      $row = $resultado->fetch_array();
+      $usuario = $row['usuario'];
+      $senha = $row['senha'];
+      $id =$row['id'];
+
+   }
+   
+
+}
+
+
+if(isset($_POST['atualizar'])){
+   $id =  $_POST['id'];
+   $usuario = $_POST['usuario'];
+   $senha = $_POST['senha'];
+
+   $conexao->query("UPDATE usuario SET usuario='$usuario', senha='$senha' Value id=$id")
+  
+   or die($conexao->error);
+
+   header("Location: usuario.php");
+}
 
 
 ?>
